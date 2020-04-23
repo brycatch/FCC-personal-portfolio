@@ -3,7 +3,7 @@
 let headerIsSet = false;
 // Sections array
 const header = document.getElementById("header");
-const welcome = document.getElementById("welcome");
+const welcome = document.getElementById("welcome-section");
 const aboutMe = document.getElementById("about-me");
 const services = document.getElementById("services");
 const resume = document.getElementById("resume");
@@ -13,11 +13,11 @@ const projects = document.getElementById("projects");
 const blog = document.getElementById("blog");
 const contact = document.getElementById("contact");
 const navLinks = Array.from(
-  document.getElementById("header-nav").querySelectorAll("a")
+  document.getElementById("navbar").querySelectorAll("a")
 );
 
 // Button
-const headerNav = document.getElementById("header-nav");
+const headerNav = document.getElementById("navbar");
 
 window.onload = documentReady();
 function documentReady() {

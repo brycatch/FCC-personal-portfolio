@@ -60,6 +60,10 @@ body {
 }
 
 .header-nav {
+    padding: 16px 48px;
+    top: 0;
+    right: 0;
+    position: absolute;
     background-color: var(--header-color-opacity);
 }
 
@@ -489,12 +493,12 @@ body {
     margin-top: 16px;
 }
 
-.portfolio-item {
+.project-tile {
     position: relative;
     margin: 0 auto;
 }
 
-.portfolio-item img {
+.project-tile img {
     width: 100%;
     max-width: 350px;
     max-height: 350px;
@@ -526,6 +530,11 @@ body {
 
 .portfolio-info .portfolio-info-link {
     font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.portfolio-info a {
+    text-decoration: none;
     color: var(--secondary-color);
 }
 
@@ -723,22 +732,18 @@ body {
 @keyframes headerOn {
     0% {
         background-color: var(--header-color-opacity);
-        padding: 32px 64px;
     }
     100% {
         background-color: var(--header-color);
-        padding: 32px 16px;
     }
 }
 
 @keyframes headerOff {
     0% {
         background-color: var(--header-color);
-        padding: 32px 16px;
     }
     100% {
         background-color: var(--header-color-opacity);
-        padding: 32px 64px;
     }
 }
 
@@ -746,37 +751,37 @@ body {
     0% {
         background-color: var(--header-color-opacity);
         opacity: 0;
-        top: -360px;
+        /* top: -360px; */
     }
     30% {
         opacity: 0;
-        top: 32px;
+        /* top: 32px; */
     }
     50% {
         opacity: 0;
-        top: 32px;
+        /* top: 32px; */
     }
     100% {
         background-color: var(--header-color);
         opacity: 1;
-        top: 32px;
+        /* top: 32px; */
     }
 }
 
 @keyframes opacityOff {
     0% {
         background-color: var(--header-color);
-        top: 32px;
+        /* top: 32px; */
         opacity: 1;
     }
     50% {
-        top: 32px;
+        /* top: 32px; */
         opacity: 0;
     }
     100% {
         background-color: var(--header-color-opacity);
         opacity: 0;
-        top: -360px;
+        /* top: -360px; */
     }
 }
 
@@ -883,7 +888,7 @@ body {
     .header i {
         display: block;
     }
-    .header-nav {
+    /* .header-nav {
         position: absolute;
         top: -360px;
         background: var(--header-color-opacity);
@@ -891,7 +896,7 @@ body {
     }
     .header-nav ul {
         flex-direction: column;
-    }
+    } */
     .about-me-content {
         grid-template-columns: 1fr;
     }
